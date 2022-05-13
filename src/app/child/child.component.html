@@ -1,0 +1,11 @@
+<h2>child component</h2>
+{{name}}<br>
+
+<label>Enter your Name:</label>
+
+<input type="text" [(ngModel)]="enteredName"(ngModelChange)="onInputChange($event)">
+<!-- 
+<h2>Entered value is:</h2>
+{{enteredName}} -->
+<h2>Parent name is</h2>
+{{parentName}}

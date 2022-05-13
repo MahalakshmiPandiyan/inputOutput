@@ -1,0 +1,7 @@
+<h2>Parent component</h2>
+<label>Parent name</label>
+<input type="text" [(ngModel)]='name'>
+<h2>My child name is :</h2>
+{{childName}}
+<hr>
+<app-child [parentName]="name" (onNameChange)="onChildNameChange($event)"></app-child>
